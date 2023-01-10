@@ -122,9 +122,15 @@ describe('divide', () => {
   });
 });
 
-// describe('modulus', () => {
+describe('modulus', () => {
+  test('can give a remainder of zero', () => {
+    expected = 0;
+    actual = modulus(56, 2);
+    expect(actual).toBe(expected);
 
-// });
+  });
+
+});
 
 // describe('even', () => {
 
