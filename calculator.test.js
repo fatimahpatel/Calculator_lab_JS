@@ -97,9 +97,16 @@ describe('multiply', () => {
 
 });
 
-// describe('divide', () => {
+describe('divide', () => {
+  test('can divide two positive numbers', () => {
+    expected = 12;
+    actual = divide(48, 4);
+    expect(actual).toBe(expected);
 
-// });
+  })
+
+
+});
 
 // describe('modulus', () => {
 
