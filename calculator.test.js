@@ -44,27 +44,27 @@ describe('subtract', () => {
   actual = subtract(10, 5);
   expect(actual).toBe(expected);
 
-  })
+  });
 
   test('can subtract two negative numbers', () => {
     expected = 1;
     actual = subtract(-7, -8);
     expect(actual).toBe(expected);
 
-  })
+  });
 
   test('can subtract zero from positive number', () => {
     expected = 5;
     actual = subtract(5, 0);
     expect(actual).toBe(expected);
 
-  })
+  });
 
   test('can subtract positive number from zero', () => {
     expected = -9;
     actual = subtract(0, 9);
     expect(actual).toBe(expected);
-  })
+  });
 
 });
 
@@ -73,27 +73,27 @@ describe('multiply', () => {
     expected = 25;
     actual = multiply(5, 5);
     expect(actual).toBe(expected);
-  })
+  });
 
 
   test('can multiply two negative numbers', () => {
     expected = 36;
     actual = multiply(-6, -6);
     expect(actual).toBe(expected);
-  })
+  });
 
 
   test('can multiply one positive and one negative number', () => {
     expected = -56;
     actual = multiply(7, -8);
     expect(actual).toBe(expected);
-  })
+  });
 
   test('can multiply a positive number by 0', () => {
     expected = 0;
     actual = multiply(7, 0);
     expect(actual).toBe(expected);
-  })
+  });
 
 });
 
@@ -102,10 +102,24 @@ describe('divide', () => {
     expected = 12;
     actual = divide(48, 4);
     expect(actual).toBe(expected);
+  });
 
-  })
+  test('can divide two negative numbers', () =>{
+    expected = 7;
+    actual = divide(-35, -5);
+    expect(actual).toBe(expected);
+  });
 
-
+  test('can divide a negative number by a positive number', () => {
+    expected = -6;
+    actual = divide(-42, 7);
+    expect(actual).toBe(expected);
+  });
+  test('can divide a positive number by a negative number', () => {
+    expected = -3;
+    actual = divide(24, -8);
+    expect(actual).toBe(expected);
+  });
 });
 
 // describe('modulus', () => {
