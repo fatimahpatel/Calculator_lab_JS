@@ -123,11 +123,29 @@ describe('divide', () => {
 });
 
 describe('modulus', () => {
-  test('can give a remainder of zero', () => {
+  test('can divide two positive numbers and give a remainder of zero', () => {
     expected = 0;
     actual = modulus(56, 2);
     expect(actual).toBe(expected);
 
+  });
+
+  test('can divide two positive numbers and give a remainder greater than zero', () => {
+    expected = 3;
+    actual = modulus(30, 9);
+    expect(actual).toBe(expected);
+  });
+
+  test('can divide two negative numbers and give a remainder of zero', () => {
+    expected = -0;
+    actual = modulus(-24, -4);
+    expect(actual).toBe(expected);
+  });
+
+  test('can divide two negative numbers and give remainder less than zero', () => {
+    expected = -3;
+    actual = modulus(-45, -6);
+    expect(actual).toBe(expected);
   });
 
 });
