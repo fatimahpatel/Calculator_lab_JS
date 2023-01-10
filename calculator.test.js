@@ -22,11 +22,17 @@ describe('sum', () => {
     expect(actual).toBe(expected);
   });
 
-  test.skip('can add two negative numbers', () => {
+  test('can add two negative numbers', () => {
+    expected = -11;
+    actual = sum(-5, -6);
+    expect(actual).toBe(expected);
     
   });
 
-  test.skip('can add zero', () => {
+  test('can add zero', () => {
+    expected = 5;
+    actual = sum(0, 5);
+    expect(actual).toBe(expected);
     
   });
 
