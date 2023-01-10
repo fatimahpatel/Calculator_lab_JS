@@ -7,7 +7,7 @@ const subtract = function(a, b){
 };
 
 const multiply = function(a,b);{
-    return a*b;
+    return  a * b;
 }
 
 const divide = null;
