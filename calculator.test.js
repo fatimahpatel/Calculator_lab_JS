@@ -39,11 +39,31 @@ describe('sum', () => {
 });
 
 describe('subtract', () => {
-  test('can subtract two numbers', () => {
+  test('can subtract two positive numbers', () => {
   expected = 5;
   actual = subtract(10, 5);
   expect(actual).toBe(expected);
 
+  })
+
+  test('can subtract two negative numbers', () => {
+    expected = 1;
+    actual = subtract(-7, -8);
+    expect(actual).toBe(expected);
+
+  })
+
+  test('can subtract zero from positive number', () => {
+    expected = 5;
+    actual = subtract(5, 0);
+    expect(actual).toBe(expected);
+
+  })
+
+  test('can subtract positive number from zero', () => {
+    expected = -9;
+    actual = subtract(0, 9);
+    expect(actual).toBe(expected);
   })
 
 });
