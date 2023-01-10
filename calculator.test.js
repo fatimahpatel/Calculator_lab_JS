@@ -16,8 +16,10 @@ describe('sum', () => {
     expect(actual).toBe(expected);
   });
 
-  test.skip('can add two large positive numbers', () => { 
-    
+  test('can add two large positive numbers', () => { 
+    expected = 500000;
+    actual = sum (268905, 231095);
+    expect(actual).toBe(expected);
   });
 
   test.skip('can add two negative numbers', () => {
@@ -31,25 +33,31 @@ describe('sum', () => {
 });
 
 describe('subtract', () => {
+  test('can subtract two numbers', () => {
+  expected = 5;
+  actual = subtract(10, 5);
+  expect(actual).toBe(expected);
+
+  })
 
 });
 
-describe('multiply', () => {
+// describe('multiply', () => {
 
-});
+// });
 
-describe('divide', () => {
+// describe('divide', () => {
 
-});
+// });
 
-describe('modulus', () => {
+// describe('modulus', () => {
 
-});
+// });
 
-describe('even', () => {
+// describe('even', () => {
 
-});
+// });
 
-describe('odd', () => {
+// describe('odd', () => {
 
-});
+// });
